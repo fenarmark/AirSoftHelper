@@ -46,8 +46,9 @@ At this stage, I wired up the battery pack by the schematic:
 
 ![Finished pack](images/power/finished_pack.png)
 ![Finished PD board](images/power/PD_adapter_9V_short.png)
+![Powered PD board](images/power/PD_adapter_working.png)
 
-To finish the power section of the device, I added a backlit switch, which I modified to have an LED rather than a neon indicator light. Additionally, I mounted a 2 way terminal block for easy disconnetion.
+To finish the power section of the device, I added a backlit switch, which I modified to have an LED rather than a neon indicator light. Additionally, I mounted a 2 way terminal block for easy disconnection.
 
 ![Finished PD board](images/power/switch.png)
 
