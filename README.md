@@ -22,7 +22,7 @@ In terms of the cell arrangement, I chose to go with 2S2P (2 parallely connected
 
 As for the charging and battery management, I will be using an HX-2S BMS board. The datasheet of this module requires us to place a Schottky diode on the input terminals, so that it directs the flow of current towards the charger and prevents voltage leak from the cells (I used one rated for 5 A, choose yours according to your adapter).
 
-In addition, a USB-C PowerDelivery dummy board will be serving as a trigger board, ensuring that any USB-C adapter can be used to charge the pack. To determine the voltage it will request from the charger, short the pads on the board corresponding to the desired voltage (The BMS board used in this project recommends using 9 V as charging voltage).
+In addition, a USB-C PowerDelivery dummy module will be serving as a trigger board, ensuring that any USB-C adapter can be used to charge the pack. To determine the voltage it will request from the charger, short the pads on the board corresponding to the desired voltage (The BMS board used in this project recommends using 9 V as charging voltage).
 
 ### Finished connection
 
