@@ -1,16 +1,16 @@
-#AirSoftHelper
+# AirSoftHelper
 
 AirSoftHelper is a work in progress project designed for a local AirSoft team. It is supposed to replicate the visual and auditory functionality of a C4 explosive from the Counter Strike video game.
 
-##Implementation
+## Implementation
 
 My iteration is based on Arduino Uno, receiving user input from a matrix keypad and displaying output on a TM1637 display module. In addition, the device uses two 3W drivers and a PAM8403 amplifier for audio feedback.
 
-#Build
+# Build
 
 Keep in mind, that this was built under home conditions with common hand tools and materials.
 
-##Power
+## Power
 
 I started off by taking apart 4 old powerbanks to harvest their 18650 cells.
 
@@ -24,13 +24,13 @@ As for the charging and battery management, I will be using an HX-2S BMS board. 
 
 In addition, a USB-C PowerDelivery dummy board will be serving as a trigger board, ensuring that any USB-C adapter can be used to charge the pack. To determine the voltage it will request from the charger, short the pads on the board corresponding to the desired voltage (The BMS board used in this project recommends using 9 V as charging voltage).
 
-###Finished connection
+### Finished connection
 
 Based on the afore-mentioned conditions, I designed this block schematic:
 
 ![BMS Power Circuit](images/diagrams/BMS_wiring_diagram.png)
 
-##Making the battery pack
+## Making the battery pack
 
 I first removed the already attached metal strips, sanded the terminal points evenly and cleaned them with isopropyl alcohol.
 
@@ -51,7 +51,7 @@ To finish the power section of the device, I added a backlit switch, which I mod
 
 ![Finished PD board](images/power/switch.png)
 
-##Electronics
+## Electronics
 
 Based on the datasheets of the components, I designed this diagram:
 
@@ -63,7 +63,7 @@ To test everything, I first assembled the device on a breadboard:
 
 Status: waiting for the MP3 DFPlayer Mini to arrive
 
-##Assembly
+## Assembly
 
 I bought a clear plastic container with a lid, originally intended for food storage, that would suit the layout of the device.
 
@@ -79,7 +79,7 @@ This is what the device looks like now, with all the components in place and the
 
 ![Container with components](images/device/lid_with_components.png)
 
-##Code
+## Code
 
 So far, I have tested the modules with a simple program that requests user input for code and time by displaying a message "CODE", then waiting for a 4-digit keypad input and by displaying a message "TIME", then waiting for a 4-digit keypad input. The inputted digits are immediately shown on the display (when entering time, the colon symbol lights up). 
 
